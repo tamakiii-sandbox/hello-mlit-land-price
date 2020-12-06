@@ -15,6 +15,7 @@ setup: \
 
 dependencies:
 	type curl
+	type unzip
 
 download: $(zip)
 unzip: $(unzip)
