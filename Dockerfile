@@ -37,10 +37,10 @@ RUN yum update -y && \
     yum install -y \
       man-pages \
       man-db \
+      make \
       && \
     yum clean all && \
     rm -rf /var/cache/yum/*
-
 
 ENV JAVA_HOME=/usr/lib/jvm/java-openjdk
 ENV JRE_HOME=/usr/lib/jvm/jre
