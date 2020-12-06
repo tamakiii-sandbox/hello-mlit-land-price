@@ -1,0 +1,12 @@
+version: "3.7"
+services:
+  scala:
+    build: .
+    volumes:
+      - .:/app/hello-mlit-land-price
+      - sbt:/root/.sbt
+      - ivy2:/root/.ivy2
+
+volumes:
+  sbt:
+  ivy2:
